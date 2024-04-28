@@ -106,7 +106,7 @@
         app:layout_constraintTop_toBottomOf="@id/rv1"
         android:layout_marginTop="30dp"
         android:text="Channels"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"

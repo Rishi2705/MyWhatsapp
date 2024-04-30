@@ -23,6 +23,7 @@ class updates : AppCompatActivity() {
             val user = statususer(photo[i],name[i])
             statusal.add(user)
         }
+        rv1.adapter = statusAdapter(this,statusal)
         val rv2 = findViewById<RecyclerView>(R.id.rv2)
         rv2.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,true)
         val photo1 = intArrayOf(R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon)
@@ -30,5 +31,11 @@ class updates : AppCompatActivity() {
         val lst_msg = arrayOf("Hi!","Hi!","Hi!","Hi!","Hi!","Hi!","Hi!","Hi!","Hi!","Hi!")
         val time = arrayOf("11:09 am","11:08 am","11:07 am","11:06 am","11:05 am","11:04 am","11:03 am","11:02 am","11:01 am","11:00 am")
         channelsal = ArrayList()
+        for(i in name1.indices){
+            val user1 = chatsuser(photo1[i],name1[i],lst_msg[i],time[i])
+            channelsal.add(user1)
+        }
+        rv2.adapter = chatsadapter(this,channelsal)
+
     }
 }

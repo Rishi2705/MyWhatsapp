@@ -48,7 +48,7 @@
             android:src="@drawable/appmenuicon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-
+            android:clickable="true"
             app:civ_circle_background_color="@color/white"/>
 
         <androidx.cardview.widget.CardView

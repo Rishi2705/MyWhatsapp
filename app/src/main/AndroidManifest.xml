@@ -9,6 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        tools:replace="android:icon,android:theme,android:label"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyWhatsapp"
         tools:targetApi="31">

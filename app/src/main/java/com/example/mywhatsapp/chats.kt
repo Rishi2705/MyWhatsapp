@@ -2,10 +2,12 @@ package com.example.mywhatsapp
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import cn.pedant.SweetAlert.SweetAlertDialog
 import de.hdodenhof.circleimageview.CircleImageView
 
 
@@ -27,7 +29,6 @@ class chats : AppCompatActivity() {
             al1.add(User1)
         }
         rv1.adapter = chatsadapter(this,al1)
-
         val rv2 = findViewById<RecyclerView>(R.id.rv2)
         rv2.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         val img = intArrayOf(R.drawable.chatsicon,R.drawable.updatesicon,R.drawable.communitiesicon,R.drawable.callsicon)
@@ -53,12 +54,12 @@ class chats : AppCompatActivity() {
             val alertDialog = builder.create()
             alertDialog.show()
             alertDialog.setCancelable(true)
-            /*val pDialog = SweetAlertDialog(this,SweetAlertDialog.PROGRESS_TYPE)
+            val pDialog = SweetAlertDialog(this,SweetAlertDialog.PROGRESS_TYPE)
             pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"))
             pDialog.setTitleText("Loading")
             pDialog.setCancelable(false)
             
-            pDialog.show()*/
+            pDialog.show()
         }
     }
 }

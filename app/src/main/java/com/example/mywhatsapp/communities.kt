@@ -14,7 +14,7 @@ class communities : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_communities)
-        val rv1 = findViewById<RecyclerView>(R.id.rv1)
+        /*val rv1 = findViewById<RecyclerView>(R.id.rv1)
         rv1.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
         val photo = intArrayOf(R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon)
         val name = arrayOf("Friend 1","Friend 2","Friend 3","Friend 4","Friend 5","Friend 6","Friend 7","Friend 8","Friend 9","Friend 10")
@@ -38,5 +38,6 @@ class communities : AppCompatActivity() {
         }
         rv2.adapter = commonbaseadapter(this,al2)
 
+    }*/
     }
 }

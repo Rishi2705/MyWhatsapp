@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mywhatsapp.chatsadapter.chatsViewHolder
+import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 
 
-class chatsadapter(val context: Activity, val arrayList: ArrayList<chatsuser>) :
+class chatsadapter(val context: Activity, val arrayList: List<User>) :
     RecyclerView.Adapter<chatsViewHolder>() {
     class chatsViewHolder(ItemView:View):RecyclerView.ViewHolder(ItemView){
         val photo = ItemView.findViewById<CircleImageView>(R.id.photo)
@@ -30,10 +31,10 @@ class chatsadapter(val context: Activity, val arrayList: ArrayList<chatsuser>) :
     }
 
     override fun onBindViewHolder(holder: chatsViewHolder, position: Int) {
-        holder.photo.setImageResource(arrayList[position].photo)
-        holder.name.text= arrayList[position].name
-        holder.lst_msg.text = arrayList[position].lst_msg
-        holder.time.text = arrayList[position].time
+        Picasso.get().load(arrayList[position].image).into(holder.photo)
+        holder.name.text=arrayList[position].firstName
+        holder.lst_msg.text=arrayList[position].domain
+        holder.time.text=arrayList[position].phone
     }
 
 }

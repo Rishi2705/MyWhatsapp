@@ -14,7 +14,7 @@ class updates : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_updates)
-        val rv1 = findViewById<RecyclerView>(R.id.rv1)
+        /*val rv1 = findViewById<RecyclerView>(R.id.rv1)
         rv1.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,true)
         val photo = intArrayOf(R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon,R.drawable.dpicon)
         val name = arrayOf("Friend 1","Friend 2","Friend 3","Friend 4","Friend 5","Friend 6","Friend 7","Friend 8","Friend 9","Friend 10")
@@ -36,6 +36,6 @@ class updates : AppCompatActivity() {
             channelsal.add(user1)
         }
         rv2.adapter = chatsadapter(this,channelsal)
-
+*/
     }
 }
